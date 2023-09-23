@@ -7,7 +7,7 @@ class BrazoMecanico{
 		double x, y, z;
 		bool sujetando;
 	public:
-		BrazoMecanico();
+		BrazoRobotico(double, double, double);
 		void cojer();
 		void soltar();
 		double consultx();

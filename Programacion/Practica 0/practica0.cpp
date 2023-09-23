@@ -1,12 +1,13 @@
 #include <iostream>
+#include <practica0.h>
 
 using namespace std;
 
-//Constructor
-BrazoRobotico::BrazoRobotico(int _x, int _y, int _z){
-	x = _x;
-	y = _y;
-	z = _z;
+
+BrazoRobotico::BrazoRobotico(double xx, double yy, double zz){
+	x = xx;
+	y = yy;
+	z = zz;
 	sujetando = false;
 }
 
@@ -24,19 +25,19 @@ void BrazoRobotico::mover(double _x, double _y, double _z){
 	z = _z;
 }
 
-double BrazoMecanico::consultx(){
+double BrazoRobotico::consultx(){
 	return x;
 }
 
-double BrazoMecanico::consulty(){
+double BrazoRobotico::consulty(){
 	return y;
 }
 
-double BrazoMecanico::consultz(){
+double BrazoRobotico::consultz(){
 	return z;
 }
 
-bool BrazoMecanico::consultsujetando(){
+bool BrazoRobotico::consultsujetando(){
 	return sujetando;
 }
 

@@ -11,7 +11,7 @@ int main(){
 	cout << Br.consultx() << endl;
 	cout << Br.consulty() << endl;
 	cout << Br.consultz() << endl;
-	cout << consultsujetando() << endl;
+	cout << "0 abierto, 1 cerrado: " consultsujetando() << endl;
 
 	
 	return 0;
