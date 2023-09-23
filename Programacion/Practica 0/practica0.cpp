@@ -1,9 +1,9 @@
 #include <iostream>
-#include <practica0.h>
+#include "practica0.h"
 
 using namespace std;
 
-
+//Constructor
 BrazoRobotico::BrazoRobotico(double xx, double yy, double zz){
 	x = xx;
 	y = yy;
@@ -19,10 +19,10 @@ void BrazoRobotico::soltar(){
 	sujetando = false;
 }
 
-void BrazoRobotico::mover(double _x, double _y, double _z){
-	x = _x;
-	y = _y;
-	z = _z;
+void BrazoRobotico::mover(double xx, double yy, double zz){
+	x = xx;
+	y = yy;
+	z = zz;
 }
 
 double BrazoRobotico::consultx(){

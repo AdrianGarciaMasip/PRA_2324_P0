@@ -1,18 +1,12 @@
 #include <iostream>
-#include <practica0.h>
+#include "practica0.h"
 
 using namespace std;
 
 int main(){
-	BrazoRobotico Br = BrazoRobotico(15.5, 20.43, 17.4);
-
-	Br.sujetando();
+	BrazoRobotico Br(0.0, 0.0, 0.0, false);
 	Br.coger();
-	cout << Br.consultx() << endl;
-	cout << Br.consulty() << endl;
-	cout << Br.consultz() << endl;
-	cout << "0 abierto, 1 cerrado: " consultsujetando() << endl;
-
+	Br.mover(15.5, 20.43, 17.22);
 	
 	return 0;
 

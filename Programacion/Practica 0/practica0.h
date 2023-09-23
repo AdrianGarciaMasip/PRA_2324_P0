@@ -2,13 +2,14 @@
 
 using namespace std;
 
-class BrazoMecanico{
+class BrazoRobotico{
 	private:
 		double x, y, z;
 		bool sujetando;
 	public:
+		BrazoRobotico();
 		BrazoRobotico(double, double, double);
-		void cojer();
+		void coger();
 		void soltar();
 		double consultx();
 		double consulty();
