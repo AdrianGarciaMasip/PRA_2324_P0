@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
 	BrazoRobotico Br(0.0, 0.0, 0.0, false);
+	Br.mover(12.23, 32.14, 20.02);
 	Br.coger();
-	Br.mover(15.5, 20.43, 17.22);
 	
 	return 0;
 

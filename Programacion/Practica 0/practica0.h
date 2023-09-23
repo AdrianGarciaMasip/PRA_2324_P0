@@ -4,17 +4,16 @@ using namespace std;
 
 class BrazoRobotico{
 	private:
-		double x, y, z;
+		double xx, yy, zz;
 		bool sujetando;
 	public:
-		BrazoRobotico();
-		BrazoRobotico(double, double, double);
+		BrazoRobotico(double xx, double yy, double zz, bool sujetando);
 		void coger();
 		void soltar();
 		double consultx();
 		double consulty();
 		double consultz();
 		bool consultsujetando();
-		void mover(double, double, double);
+		void mover(double x, double y, double z);
 
 };

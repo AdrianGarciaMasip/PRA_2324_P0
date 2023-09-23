@@ -4,11 +4,11 @@
 using namespace std;
 
 //Constructor
-BrazoRobotico::BrazoRobotico(double xx, double yy, double zz){
-	x = xx;
-	y = yy;
-	z = zz;
-	sujetando = false;
+BrazoRobotico::BrazoRobotico(double xx, double yy, double zz, bool sujetando){
+	this->xx = xx;
+	this->yy = yy;
+	this->zz = zz
+	this->sujetando = sujetando;
 }
 
 void BrazoRobotico::coger(){
@@ -19,22 +19,22 @@ void BrazoRobotico::soltar(){
 	sujetando = false;
 }
 
-void BrazoRobotico::mover(double xx, double yy, double zz){
-	x = xx;
-	y = yy;
-	z = zz;
+void BrazoRobotico::mover(double x, double y, double z){
+	xx += x;
+	yy += y;
+	zz += z;
 }
 
 double BrazoRobotico::consultx(){
-	return x;
+	return xx;
 }
 
 double BrazoRobotico::consulty(){
-	return y;
+	return yy;
 }
 
 double BrazoRobotico::consultz(){
-	return z;
+	return zz;
 }
 
 bool BrazoRobotico::consultsujetando(){
